@@ -20,6 +20,11 @@ Shortcuts to build or README files [HERE](https://docs.github.com/en/get-started
 
 `git config --global user.email` ->   Configures the email of GitHub,for all the repositories.
 
+`git init` ->  creates .git folder in the current directory
+
+`git config --global init.defaultBranch` -> Set the name of the default branch for all the repositories.
+
+
 ## Clone an existing repository
 `git clone <repo_url>` ->  Clones remote repository into local.
 
