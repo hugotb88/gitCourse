@@ -2,6 +2,13 @@
 
 Shortcuts to build or README files [HERE](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
+## GIT Local workspace
+- Local
+- Staging (Pre-Commit)
+- Commit
+
+-  Remote Repository
+
 ## Commands
 `git version` ->   Returns installed GIT Version
 
@@ -16,7 +23,7 @@ Shortcuts to build or README files [HERE](https://docs.github.com/en/get-started
 ## Clone an existing repository
 `git clone <repo_url>` ->  Clones remote repository into local.
 
-
+## Add new file
 
 
 
