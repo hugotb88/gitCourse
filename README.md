@@ -41,9 +41,35 @@ Shortcuts to build or README files [HERE](https://docs.github.com/en/get-started
 `git push origin <branch_remote_repository>` ->  Pushes new file to remote repository.
 
 
+## Fresh repository
+- `git init <project_name>` ->  Creates a new GIT project (folder project and .git folder).
+- Create new files in the project folder (like "vic.txt" file)
+- `git status` -> to see the new files created.
+- `git add vic.txt` -> Adds new file to staging area.
+- `git commit` -> Moves new file to repository area, ready to be pushed to remote repository
+  - You need to add a Commit message
+- Create the remote repository in GitHub.com
+- `git remote add origin <url_to_remote_repository>` -> Indicates to your local repo which one is the remote repo.
+- `git push origin <destination_branch>` -> Pushes the commited changes into the remote repository.
+
+## Existing repository
+- Move to the root folder of your local project
+- `git init ` -> Starts git repository and creates .git folder.
+- `git add .` -> Adds all the files in the current folder to the staging area.
+- `git commit` -> Moves new files to repository area, ready to be pushed to remote repository
+  - You need to add a Commit message
+- Create the remote repository in GitHub.com
+- `git remote add origin <url_to_remote_repository>` -> Indicates to your local repo which one is the remote repo.
+- `git push origin <destination_branch>` -> Pushes the commited changes into the remote repository.
+
+- `git push origin <destination_branch>` -> Pushes the commited changes into the remote repository.
 
 
-
-```
-More code
-```
+## Existing remote repository
+- `git clone <url_remote_repository>` -> Makes a copy of the remote repository in your local.
+- Create new files in the project folder (like "vic.txt" file)
+- `git status` -> to see the new files created.
+- `git add vic.txt` -> Adds new file to staging area.
+- `git commit` -> Moves new file to repository area, ready to be pushed to remote repository
+  - You need to add a Commit message
+- `git push origin <destination_branch>` -> Pushes the commited changes into the remote repository.
