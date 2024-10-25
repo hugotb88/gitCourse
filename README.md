@@ -40,6 +40,11 @@ Shortcuts to build or README files [HERE](https://docs.github.com/en/get-started
 ## Push new file to remote repository (.git folder)
 `git push origin <branch_remote_repository>` ->  Pushes new file to remote repository.
 
+## Unstage a change already added
+After `git add <file_path>`, `git reset HEAD <file_path>` ->  Returns to stage a commited change.
+
+## Return a file to the remote repository version
+`git checkout -- <file_path>` ->  Returns a file to the remote repository version.
 
 ## Fresh repository
 - `git init <project_name>` ->  Creates a new GIT project (folder project and .git folder).
