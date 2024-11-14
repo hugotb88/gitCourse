@@ -112,3 +112,13 @@ After `git add <file_path>`, `git reset HEAD <file_path>` ->  Returns to stage a
 - `git commit` -> Moves new file to repository area, ready to be pushed to remote repository
   - You need to add a Commit message
 - `git push origin <destination_branch>` -> Pushes the commited changes into the remote repository.
+
+# Git Aliases
+Customization of git commands.
+They are stored in the `~/.gitconfig` file, inside of the .git folder of the project or the git/etc/ folder in the GIT installation folder
+
+- ` git config --global alias.<alias_name> "<git_command_plus_options>"`
+
+Example:
+Instead of typing`git log --all --graph --decorate --oneline` you can create an alias that executes that git command with a shorter instruction like `git hist`
+- `git config --global alias.hist "log --all --graph --decorate --oneline"` -> Creates git hist alias
