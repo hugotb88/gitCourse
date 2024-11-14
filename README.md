@@ -34,6 +34,11 @@ Shortcuts to build or README files [HERE](https://docs.github.com/en/get-started
 ## Add new file
 `git add <path_new_file>` ->  Adds new file to staging, before commit to local repository and push to remote repository.
 
+## Update the index after an addition of a new file
+`git add <path_new_file>` ->  Adds new file to staging, before commit to local repository and push to remote repository.
+
+`git add -u` ->  Updates the index.
+
 ## Move new file to local repository (.git folder)
 `git commit <path_new_file>` ->  Commits new file to local repository, before  push to remote repository.
 
