@@ -96,6 +96,19 @@ After `git add <file_path>`, `git reset HEAD <file_path>` ->  Returns to stage a
 
 `git show <commit_id>` ->  Displays information of the specified commit.
 
+## Branching Commands
+`git branch -a` -> Show a list of branches in in the remote and our local repository.
+
+`git branch <new_branch>` -> Creates a new branch based on the current one.
+
+`git checkout <branch>` -> Switch to the specified branch.
+
+`git checkout -b <new_branch>` -> Creates and switches to a new branch based on the current one.
+
+`git branch -m <old_branch_name> <new_branch_name>` -> To rename a branch.
+
+`git branch -d <branch_name>` -> To delete a branch.
+
 ## Fresh repository
 - `git init <project_name>` ->  Creates a new GIT project (folder project and .git folder).
 - Create new files in the project folder (like "vic.txt" file)
