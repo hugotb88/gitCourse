@@ -45,6 +45,14 @@ Shortcuts to build or README files [HERE](https://docs.github.com/en/get-started
 ## Push new file to remote repository (.git folder)
 `git push origin <branch_remote_repository>` ->  Pushes new file to remote repository.
 
+## Delete a file
+`git rm <file_path>` ->  Moves the file to staging space.
+
+## "Undelete" or unstage a file from staging
+`git reset HEAD <file_path>` ->  Moves out the file from staging space, but it doesnt restores the file in the working directory.
+
+`git checkout -- <file_path>` ->  Moves the file to the working directory again.
+
 ## Unstage a change already added
 After `git add <file_path>`, `git reset HEAD <file_path>` ->  Returns to stage a commited change.
 
