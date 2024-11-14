@@ -2,6 +2,12 @@
 
 Shortcuts to build or README files [HERE](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
+## UI Tools for merging or solve conflicts 
+- GitHub Desktop
+- P4Merge 
+- Visual Studio Code with git plugin
+
+
 ## GIT Local workspace
 - Working Repository
 - Staging (Pre-Commit)
