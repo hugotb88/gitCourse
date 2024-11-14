@@ -122,3 +122,13 @@ They are stored in the `~/.gitconfig` file, inside of the .git folder of the pro
 Example:
 Instead of typing`git log --all --graph --decorate --oneline` you can create an alias that executes that git command with a shorter instruction like `git hist`
 - `git config --global alias.hist "log --all --graph --decorate --oneline"` -> Creates git hist alias
+
+
+# Unwanted files (.gitignore)
+File where we specify the files that we dont want that git tracks, usually is in the root folder of the project or we can create it manually. 
+It can be done in three different ways:
+- Specific file -> File.txt
+- File pattern -> *.ext
+- Folder -> my-folder/
+
+One expression per line.
