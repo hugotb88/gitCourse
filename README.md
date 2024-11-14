@@ -57,7 +57,28 @@ Shortcuts to build or README files [HERE](https://docs.github.com/en/get-started
 After `git add <file_path>`, `git reset HEAD <file_path>` ->  Returns to stage a commited change.
 
 ## Return a file to the remote repository version
-`git checkout -- <file_path>` ->  Returns a file to the remote repository version.
+`git checkout -- <file_path>` ->  Returns a file to the remote repository version.\
+
+## History commands
+`git log` ->  Displays commits history by commit.
+
+`git log --abbrev-commit` ->  Displays commits history by commit and showing only the first 6-7 characters of the commit id.
+
+`git log --oneline` ->  Displays commits history by commit in one line.
+
+`git log --graph` ->  Displays commits history in an ASCII that represents the branching.
+
+`git log --decorate` ->  Displays commits history by commit adding tags to describe info.
+
+`git log --since="3 days ago"` ->  Displays commits history for the last 3 days.
+
+`git log -- <file_path>` ->  Displays commits history for the specified file.
+
+`git log --follow -- <file_path>` ->  Displays commits history for the specified file reviewing file name changes.
+
+`git log --oneline --graph --decorate` ->  Example of combination.
+
+`git show <commit_id>` ->  Displays information of the specified commit.
 
 ## Fresh repository
 - `git init <project_name>` ->  Creates a new GIT project (folder project and .git folder).
