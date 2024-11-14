@@ -57,7 +57,17 @@ Shortcuts to build or README files [HERE](https://docs.github.com/en/get-started
 After `git add <file_path>`, `git reset HEAD <file_path>` ->  Returns to stage a commited change.
 
 ## Return a file to the remote repository version
-`git checkout -- <file_path>` ->  Returns a file to the remote repository version.\
+`git checkout -- <file_path>` ->  Returns a file to the remote repository version.
+
+## Fetch changes without merging them
+`git fetch origin` ->  Retrieves commits, files, and references from the remote repository to local repository.
+
+## Merge
+`git merge <branch_from_where_we_want_to_merge_changes>` ->  Combines the current branch with the specified one.
+
+## Rebase
+`git rebase <base>` ->  It will put at the top the commits of the current branch over the commits of the base branch.
+
 
 ## History commands
 `git log` ->  Displays commits history by commit.
