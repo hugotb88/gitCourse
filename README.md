@@ -296,3 +296,22 @@ It has a little extra of information than a lightweight tag.
 - `git push origin :<tag_name>` -> Removes from the remote repository that tag, it keeps in the local repository.
 
 
+# Reset and Reflog
+RESET to go back to an earlier commit, there are different kinds of resets.
+  - `git reset mixed` -> Moves HEAD to the specified commit and unstages the changes, but keeps the working directory intact. This is the default option.
+  - `git reset soft` -> Does not revert staged or working tree files back to a previous state. This command keeps your index and filesystem unchanged, but purges your commit history.
+  - `git reset hard` -> Reverts the working tree to the previous commit's state. This command removes files from the filesystem, clears the staging index, and changes the filesystem.
+
+REFLOG shows the log of commands executed in the last 60 days.
+
+
+- `git reset HEAD^` - Will go back one commit.
+- `git reset HEAD^2` - Will go back two levels of commit.
+
+- `git reflog` -> List of all the commands executed, then you can go back to a previous version that you have already removed using the ids and `git reset`.
+
+
+# GIT REVERT
+** `git revert` is not the same, revert undo things but also creates a commit with the changes made and keeps the rest of the changes made after that commit, it can be used when you find a bug and you want only to reverse that single commit.
+
+Reverting has two important advantages over resetting. First, it doesn’t change the project history, which makes it a “safe” operation for commits that have already been published to a shared repository.
