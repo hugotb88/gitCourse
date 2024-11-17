@@ -208,4 +208,30 @@ Example
 - remote master with changes
 - local master with changes
 - `git pull --rebase origin master` -> Indicates we want remote master changes, but they will be rebased and we will our changes on top of the remote changes.
-- 
+
+
+# Stashing
+Stashing is about to save your work in progress in your current branch if you are not ready to commit it, while you change to another branch or need to do another stuff and your previous changes are not ready to be commited.
+
+- `git checkout -b <feature_branch>` to create a feature branch based on master.
+- Changes made in feature branch
+- `git status` will show you your files changed.
+
+Then you need to do some other urgent changes in another branch and your changes are not ready to be commited.
+
+- `git stash` -> Will save your work in progress.
+- `git status` will show you your working directory clean, since your work is already stashed.
+- You make the changes in the proper files and commits them
+- To recover your previous stashed changes you need to `git stash apply`
+- `git status` will show you your working directory with the changes you were doing before stash.
+- Commit changes
+- `git stash list` to show the stashed changes, you can `git stash drop` to remove that from stashed work.
+  - if you use `git stash pop` it will perform  `git stash apply` and then `git stash drop` 
+
+
+Another Example (untracked files)
+
+- New file created, this is an untracked file since GIT doesnt know it.
+- if you do a `git stash` and then `git status` the file still appears because GIT is not tracking it.
+- You can add the new file and then stash it.
+  - Or you can do `git stash -u` to stash untracked files.
