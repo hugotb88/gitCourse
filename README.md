@@ -78,7 +78,7 @@ After `git add <file_path>`, `git reset HEAD <file_path>` ->  Returns to stage a
 `git diff <branch_one> <branch_two>` ->  Shows differences between two branches.
 
 A Fast-Forward merge means that the changes coming from the branch were merged without any issue and will be the last changes in the current branch.
-
+.orig files are the ones created when we have merge conflicts and a temporary file is created with both changes.
 
 ## History commands
 `git log` ->  Displays commits history by commit.
