@@ -74,6 +74,11 @@ After `git add <file_path>`, `git reset HEAD <file_path>` ->  Returns to stage a
 ## Rebase
 `git rebase <base>` ->  It will put at the top the commits of the current branch over the commits of the base branch.
 
+## Differences
+`git diff <branch_one> <branch_two>` ->  Shows differences between two branches.
+
+A Fast-Forward merge means that the changes coming from the branch were merged without any issue and will be the last changes in the current branch.
+
 
 ## History commands
 `git log` ->  Displays commits history by commit.
@@ -107,7 +112,9 @@ After `git add <file_path>`, `git reset HEAD <file_path>` ->  Returns to stage a
 
 `git branch -m <old_branch_name> <new_branch_name>` -> To rename a branch.
 
-`git branch -d <branch_name>` -> To delete a branch.
+`git branch -d <branch_name>` -> To delete a branch (locally).
+
+`git branch -D <branch_name>` -> To delete a branch (Remote repository).
 
 ## Fresh repository
 - `git init <project_name>` ->  Creates a new GIT project (folder project and .git folder).
