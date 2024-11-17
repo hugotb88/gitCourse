@@ -260,3 +260,39 @@ Another Example (untracked files)
   - It will contain the modified and added file
   - The changes not commited yet.
   - The untracked files.
+
+# Tagging
+GIT tags are only labels for our branches to be able to differentiate them, GIT has some "default" tags like:
+- `git log --oneline --decorate --all`
+  - HEAD -> Its just a pointer
+  - origin/HEAD and origin/master  branches in the remote repository
+  - master is our local repository master branch.
+
+Example
+
+- `git tag myTag` -> will create "myTag" label
+- `git log --oneline --decorate --all` will display the new tag also
+- `git tags --list` -> will shows the tag list.
+- `git show <tag_name>` -> will show the details of a tag.
+- `git tag --delete <tag_name>` -> Deletes an specific tag.
+
+## Annotated Tags
+It has a little extra of information than a lightweight tag.
+
+- `git tag -a <tag_name>` -> Option to say that it will be an annotated tag.
+
+## Comparing tags
+- `git diff <tag_name1> <tag_name2>`
+
+## Tagging an specific commit 
+- `git tag -a <tag_name> <commit_id>`
+
+## Updating tags
+- `git tag -a <tag_name> -f <commit_id>`
+
+## Tags with GitHub
+- `git push origin <tag_name>` --> Will send to GitHub the specified tags to "Releases" section.
+- `git push origin master --tags` --> will send to Github all the tags in master branch.
+- `git push origin :<tag_name>` -> Removes from the remote repository that tag, it keeps in the local repository.
+
+
