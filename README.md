@@ -175,7 +175,37 @@ One expression per line.
 Examples
 - feature branch with changes
 - master branch with changes
+  - Changes in both branches are in different files. 
 - go to feature branch and run `git rebase master`, to get the latest changes from master, but put on the top the changes made by the feature branch.
-- checkout master branch and `git merge <feature_branch>`, i will be a fast-forward merge since the changes were rebased, master changes first and then feature branch changes.
+- checkout master branch and `git merge <feature_branch>`, it will be a fast-forward merge since the changes were rebased, master changes first and then feature branch changes.
 - go and commit and push changes in master.
 
+
+## Abort a Rebase
+
+Example
+- feature branch with changes
+- master branch with changes
+  - Changes are in the same files
+- go to feature branch and run `git rebase master`, to get the latest changes from master, an error is showed, there is a conflict.
+- `git rebase --abort` will get us out of the rebase process letting the files are they were before the attempt to rebase.
+
+
+## Fixing Rebase conflicts and continue
+
+Example
+- feature branch with changes
+- master branch with changes
+  - Changes are in the same files
+- go to feature branch and run `git rebase master`, to get the latest changes from master, an error is showed, there is a conflict.
+- Fix conflicts in files
+- `git add <files_fixed_after_resolvd_conflict>` to add the new versions of the fixed files.
+- `git rebase --continue` to continue with the rest of the rebase.
+
+## Pull with Rebase
+
+Example
+- remote master with changes
+- local master with changes
+- `git pull --rebase origin master` -> Indicates we want remote master changes, but they will be rebased and we will our changes on top of the remote changes.
+- 
