@@ -249,3 +249,14 @@ Another Example (untracked files)
 - `git stash apply stash@{1}` -> Applies that stashed change
 - `git stash forp stash@{1}` -> removes that specific stashed change form the list.
   - `git stash clear` -> Cleans and empty all the stashed list.
+
+## Staging into a branch
+-
+- Branch with a modified file already added with `git add <file>`
+- Changes not ready to be commited.
+- a New file not tracked yet.
+- `git stash -u` to stash untracked files.
+- `git stash branch <new_branch_name>` -> creates a new branch and moves all the changes to a new branch and switch to that branch
+  - It will contain the modified and added file
+  - The changes not commited yet.
+  - The untracked files.
