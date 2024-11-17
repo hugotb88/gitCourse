@@ -168,3 +168,14 @@ It can be done in three different ways:
 - Folder -> my-folder/
 
 One expression per line.
+                              
+
+# Rebasing
+
+Examples
+- feature branch with changes
+- master branch with changes
+- go to feature branch and run `git rebase master`, to get the latest changes from master, but put on the top the changes made by the feature branch.
+- checkout master branch and `git merge <feature_branch>`, i will be a fast-forward merge since the changes were rebased, master changes first and then feature branch changes.
+- go and commit and push changes in master.
+
