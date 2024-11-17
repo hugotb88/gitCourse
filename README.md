@@ -235,3 +235,17 @@ Another Example (untracked files)
 - if you do a `git stash` and then `git status` the file still appears because GIT is not tracking it.
 - You can add the new file and then stash it.
   - Or you can do `git stash -u` to stash untracked files.
+
+## Managing multiple stashed files
+
+- branch with changes in one file
+- `git stash save "changes in file 1"`
+- do another change in another file
+- `git stash save "changes in file 2"`
+- do another change in another file
+- `git stash save "changes in file 3"`
+- `git stash list` to see the list of changes stashed.
+- `git stash show stash@{1}` -> to show that specific element form the stashed list.
+- `git stash apply stash@{1}` -> Applies that stashed change
+- `git stash forp stash@{1}` -> removes that specific stashed change form the list.
+  - `git stash clear` -> Cleans and empty all the stashed list.
