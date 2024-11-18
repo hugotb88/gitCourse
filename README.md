@@ -315,3 +315,14 @@ REFLOG shows the log of commands executed in the last 60 days.
 ** `git revert` is not the same, revert undo things but also creates a commit with the changes made and keeps the rest of the changes made after that commit, it can be used when you find a bug and you want only to reverse that single commit.
 
 Reverting has two important advantages over resetting. First, it doesn’t change the project history, which makes it a “safe” operation for commits that have already been published to a shared repository.
+
+
+# Cherry Pick
+To pick up and specific commit from one branch and put it into another one.
+Could be dangerous.
+Could cause merge conflicts.
+
+- Choose the commit where you want the change in the "feature branch"
+- Switch to your current branch
+- `git cherry-pick <commit-id>`
+
